@@ -1,7 +1,8 @@
 import ServiceItem from "@/components/modules/ServiceItem/ServiceItem";
 import React from "react";
 
-function Services() {
+function Services({ services }) {
+  console.log(services);
   return (
     <div className="container-fluid pt-5">
       <div className="container">
@@ -15,7 +16,11 @@ function Services() {
           <h1 className="display-4">Fresh &amp; Organic Beans</h1>
         </div>
         <div className="row">
-          <ServiceItem
+          {services.map((service) => (
+            <ServiceItem key={service.id} {...service} />
+          ))}
+
+          {/* <ServiceItem
             title="Fastest Door Delivery"
             desc="Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et
             et lorem dolor sed est sit invidunt, dolore tempor diam ipsum
@@ -46,7 +51,7 @@ function Services() {
             takima erat tempor"
             img="/img/service-4.jpg"
             icon="faTable"
-          />
+          /> */}
         </div>
       </div>
     </div>

@@ -32,24 +32,38 @@
       "img": "/img/service-2.jpg",
       "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
       "icon": "faCoffee"
+    },
+    {
+      "id": 3,
+      "title": "Best Quality Coffee",
+      "img": "/img/service-3.jpg",
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+      "icon": "faAward"
+    },
+    {
+      "id": 4,
+      "title": "Online Table Booking",
+      "img": "/img/service-4.jpg",
+      "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+      "icon": "faTable"
     }
   ],
 
   "newsLetters": [
     {
       "id": 1,
-      "email": "mohammad@gmail.com"
+      "email": "ali@gmail.com"
     },
     {
       "id": 2,
-      "email": "ali@gmail.com"
+      "email": "reza@gmail.com"
     }
   ],
 
   "comment": [
     {
       "id": 1,
-      "username": "Q_Yolme",
+      "username": "H_nazari",
       "body": "Perfect Coffee :))",
       "productID": 1,
       "score": 5
@@ -57,7 +71,7 @@
 
     {
       "id": 2,
-      "username": "Amin_Saeedi",
+      "username": "Fatemeh_rezaei",
       "body": "Perfect Coffee :))",
       "productID": 2,
       "score": 4.5
