@@ -1,12 +1,14 @@
-import Slider from '@/components/templates/Index/Slider'
-import React from 'react'
+import About from "@/components/templates/Index/About";
+import Slider from "@/components/templates/Index/Slider";
+import React from "react";
 
 function Home() {
   return (
-    <div>
+    <>
       <Slider />
-    </div>
-  )
+      <About />
+    </>
+  );
 }
 
-export default Home
+export default Home;
