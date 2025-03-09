@@ -1,6 +1,7 @@
 import About from "@/components/templates/Index/About";
 import Menu from "@/components/templates/Index/Menu";
 import Offer from "@/components/templates/Index/Offer";
+import Reservation from "@/components/templates/Index/Reservation";
 import Services from "@/components/templates/Index/Services";
 import Slider from "@/components/templates/Index/Slider";
 import React from "react";
@@ -13,6 +14,7 @@ function Home({ data }) {
       <Services services={data.services} />
       <Offer />
       <Menu menu={data.menu} />
+      <Reservation />
     </>
   );
 }

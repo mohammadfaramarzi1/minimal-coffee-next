@@ -1,9 +1,8 @@
-import React from 'react'
+import Form from "@/components/modules/Form/Form";
+import React from "react";
 
 function Reservation() {
-  return (
-    <div>Reservation</div>
-  )
+  return <Form />;
 }
 
-export default Reservation
+export default Reservation;
