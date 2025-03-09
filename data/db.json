@@ -17,7 +17,6 @@
       "off": 0
     }
   ],
-
   "services": [
     {
       "id": 1,
@@ -48,7 +47,6 @@
       "icon": "faTable"
     }
   ],
-
   "newsLetters": [
     {
       "id": 1,
@@ -57,9 +55,20 @@
     {
       "id": 2,
       "email": "reza@gmail.com"
+    },
+    {
+      "id": "df91",
+      "email": "faramarzi.dev@gmail.com"
+    },
+    {
+      "id": "89cf",
+      "email": "zahra.hasaniiii@gamil.com"
+    },
+    {
+      "id": "6da3",
+      "email": "mohsen.safari@gmail.com"
     }
   ],
-
   "comment": [
     {
       "id": 1,
@@ -68,7 +77,6 @@
       "productID": 1,
       "score": 5
     },
-
     {
       "id": 2,
       "username": "Fatemeh_rezaei",

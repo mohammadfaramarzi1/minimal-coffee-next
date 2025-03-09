@@ -1,4 +1,5 @@
 import About from "@/components/templates/Index/About";
+import Offer from "@/components/templates/Index/Offer";
 import Services from "@/components/templates/Index/Services";
 import Slider from "@/components/templates/Index/Slider";
 import React from "react";
@@ -9,6 +10,7 @@ function Home({ data }) {
       <Slider />
       <About />
       <Services services={data.services} />
+      <Offer />
     </>
   );
 }
