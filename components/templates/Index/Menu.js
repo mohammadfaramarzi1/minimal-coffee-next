@@ -2,7 +2,6 @@ import Card from "@/components/modules/Card/Card";
 import React from "react";
 
 function Menu({ menu }) {
-  console.log(menu);
   return (
     <div className="container-fluid pt-5">
       <div className="container">

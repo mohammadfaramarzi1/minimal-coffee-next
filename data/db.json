@@ -104,21 +104,21 @@
   "comments": [
     {
       "id": 1,
-      "username": "Q_Yolme",
+      "username": "Narges alavi",
       "productID": 1,
       "body": "Wonderful coffee ❤️",
       "profile": "/img/testimonial-1.jpg"
     },
     {
       "id": 2,
-      "username": "Amin Saeedi",
+      "username": "Taha rezaei",
       "productID": 2,
       "body": "Perfect coffee 🙋‍♂️❤️",
       "profile": "/img/testimonial-2.jpg"
     },
     {
       "id": 3,
-      "username": "Sasan Moqaddas",
+      "username": "Darya safari",
       "productID": 1,
       "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
       "profile": "/img/testimonial-3.jpg"
@@ -132,7 +132,7 @@
     },
     {
       "id": 5,
-      "username": "Mmd Mohammadi",
+      "username": "Mohammad Mohammadi",
       "productID": 1,
       "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
       "profile": "/img/testimonial-4.jpg"
