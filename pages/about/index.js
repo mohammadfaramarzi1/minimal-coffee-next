@@ -1,8 +1,9 @@
+import Story from '@/components/templates/About/Story'
 import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <Story />
   )
 }
 
