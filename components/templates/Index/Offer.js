@@ -7,7 +7,7 @@ function Offer() {
   const addEmailHandler = async (event) => {
     event.preventDefault();
     if (email.length < 8) return toast.error("Invalid Email!");
-    const res = await fetch("http://localhost:4000/newsLetters", {
+    const res = await fetch("http://localhost:4000/newsletters", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
