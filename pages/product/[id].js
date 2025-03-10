@@ -19,10 +19,12 @@ export async function getStaticProps(context) {
 
   const menus = await menusResponse.json();
   const comments = await commentsResponse.json();
+
   const mainProduct = menus.find((product) => product.id === productId);
   const mainComments = comments.filter(
     (comment) => comment.productID === +productId
   );
+  
   return {
     props: {
       data: {
