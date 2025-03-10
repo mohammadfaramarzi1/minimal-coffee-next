@@ -1,8 +1,13 @@
+import Header from '@/components/modules/Header/Header'
+import ContactDetails from '@/components/templates/Contact/ContactDetails'
 import React from 'react'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+      <Header route="Contact Us" />
+      <ContactDetails />
+    </>
   )
 }
 
