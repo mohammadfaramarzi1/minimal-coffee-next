@@ -1,17 +1,60 @@
-import React from "react";
+import Link from "next/link";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Navbar.module.css";
-import Link from "next/link";
+import { useState } from "react";
+import { toast } from "sonner";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const [search, setSearch] = useState("");
+  const router = useRouter();
+
+  const searchHandler = () => {
+    if (!search) return toast.error("Input field is empty!!");
+    router.push(`/search?query=${search}`);
+  };
+
+  const searchHandlerWithEnter = (event) => {
+    if (event.keyCode === 13) {
+      if (search) {
+        router.push(`/search?query=${search}`);
+      } else {
+        return toast.error("Input field is empty!!");
+      }
+    }
+  };
+
   return (
-    <div className={`container-fluid p-0 nav-bar ${styles.nav_bar}`}>
+    <div className={`container-fluid p-0 ${styles.nav_bar}`}>
       <nav
         className={`${styles.navbar} ${styles.navbar_expand_lg} bg-none navbar-dark py-3`}
       >
-        <a href="index.html" className={`${styles.navbar_brand} px-lg-4 m-0`}>
-          <h1 className="m-0 display-4 text-uppercase text-white">Next-Coffee</h1>
-        </a>
+        <div className="d-flex align-items-center position-relative">
+          <Link href="/" className={`${styles.navbar_brand} px-lg-4 m-0`}>
+            <h1 className="m-0 display-4 text-uppercase text-white">
+              Next-Coffee
+            </h1>
+          </Link>
+
+          <input
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            onKeyDown={searchHandlerWithEnter}
+            type="text"
+            className={styles.search_input}
+            placeholder="Search..."
+          />
+          <FontAwesomeIcon
+            onClick={searchHandler}
+            className={styles.search_icon}
+            icon={faSearch}
+          />
+        </div>
         <button
           type="button"
           className={`${styles.navbar_toggler}`}
@@ -31,24 +74,29 @@ function Navbar() {
             >
               Home
             </Link>
+
             <Link href="/about" className={`${styles.nav_link}`}>
               About
             </Link>
             <Link href="/services" className={`${styles.nav_link}`}>
-              Service
+              Services
             </Link>
             <Link href="/menu" className={`${styles.nav_link}`}>
               Menu
             </Link>
+
             <div className={`${styles.dropdown}`}>
-              <Link
-                href="/"
+              <a
+                href="#"
                 className={`${styles.nav_link} ${styles.dropdown_toggle}`}
                 data-toggle="dropdown"
               >
                 Pages
-              </Link>
-              <div className={`${styles.dropdown_menu} ${styles.text_capitalize}`}>
+              </a>
+
+              <div
+                className={`${styles.dropdown_menu} ${styles.text_capitalize}`}
+              >
                 <Link href="/reservation" className={`${styles.dropdown_item}`}>
                   Reservation
                 </Link>
@@ -57,6 +105,7 @@ function Navbar() {
                 </Link>
               </div>
             </div>
+
             <Link href="/contact" className={`${styles.nav_link}`}>
               Contact
             </Link>

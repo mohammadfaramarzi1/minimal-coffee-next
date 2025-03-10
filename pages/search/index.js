@@ -1,8 +1,11 @@
+import Header from '@/components/modules/Header/Header'
 import React from 'react'
 
 function Search() {
   return (
-    <div>Search</div>
+    <>
+      <Header route="Search" />
+    </>
   )
 }
 
