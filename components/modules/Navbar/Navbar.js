@@ -11,8 +11,8 @@ import { toast } from "sonner";
 import { useRouter } from "next/router";
 
 function Navbar() {
-  const [search, setSearch] = useState("");
   const router = useRouter();
+  const [search, setSearch] = useState(router.query.query || "");
 
   const searchHandler = () => {
     if (!search) return toast.error("Input field is empty!!");
